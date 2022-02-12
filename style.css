@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 85vw;
+  height: 10vh;
+  margin: auto;
+}
+.logo-container,
+.cart {
+  flex: 1;
+}
+.logo {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 5px;
+}
+nav {
+  flex-grow: 2;
+}
+.logo-container,
+.nav-links,
+.cart {
+  display: flex;
+}
+.nav-links {
+  justify-content: space-around;
+}
+.nav-link a {
+  font-size: 18px;
+  color: #5f5f79;
+}
+.cart {
+  justify-content: flex-end;
+}
+.presentation {
+  display: flex;
+  width: 85vw;
+  min-height: 80vh;
+  margin: auto;
+  align-items: center;
+  gap: 10px;
+}
+.introduction,
+.cover {
+  flex: 1;
+}
+.intro-text h1 {
+  font-size: 40px;
+  font-weight: 500;
+  background: linear-gradient(to right, #494964, #6f6f89);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro-text p {
+  margin-top: 5px;
+  font-size: 22px;
+  color: #585772;
+}
+.cta {
+  padding-top: 50px;
+}
+.cta-select,
+.cta-add {
+  border: 2px solid #c36cbb;
+  background: transparent;
+  color: #c36cbb;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+}
+.cta-add {
+  background-color: #c36cbb;
+  color: white;
+  border: none;
+  margin-left: 30px;
+}
+.cover {
+  height: 75vh;
+}
+.cover-img {
+  height: 100%;
+  filter: drop-shadow(0px 5px 3px black);
+  animation: drop 1.5s ease;
+}
+
+.big-circle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+  opacity: 0.5;
+  height: 80%;
+}
+.mid-circle {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  z-index: -1;
+  height: 60%;
+  opacity: 0.4;
+}
+.small-circle {
+  position: absolute;
+  bottom: 0%;
+  left: 20%;
+  z-index: -1;
+}
+.laptop-select {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: 23%;
+}
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@media screen and (max-width: 1024px) {
+  header{
+    width: 93vw;
+  }
+  .logo{
+    font-size: 16px;
+  }
+.nav-link a {
+  font-size: 16px;
+  color: #5f5f79;
+}
+  .presentation {
+    flex-direction: column;
+  }
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .intro-text h1 {
+    font-size: 25px;
+  }
+  .intro-text p {
+    font-size: 16px;
+  }
+  .cta {
+    padding-top: 20px;
+  }
+  .laptop-select {
+    position: static;
+    margin-bottom: 10px;
+    margin: auto;
+    width: 30%;
+  }
+  .cover {
+    width: 50vw;
+  }
+  .cover-img{
+    width: 100%;
+  }
+  .small-circle,
+  .mid-circle,
+  .big-circle {
+    opacity: 0.2;
+  }
+}
+
+
+
